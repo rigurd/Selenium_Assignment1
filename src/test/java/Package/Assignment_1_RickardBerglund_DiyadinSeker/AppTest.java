@@ -44,10 +44,10 @@ public class AppTest {
 		assertNotNull(webTitle);
 		assertEquals("Varukorg | Leksaker från BR", webTitle);
 	}
-//	@Test
-//	public void TF002(){
-//		System.out.println("a");
-//	}
+	@Test
+	public void TF002(){
+		System.out.println("a");
+	}
 	@After
 	public void after(){
 	}
