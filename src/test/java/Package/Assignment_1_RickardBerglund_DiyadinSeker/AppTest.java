@@ -37,7 +37,7 @@ public class AppTest {
 		driver.get(baseURL);
 	}
 	@Test
-	public void TF001() throws InterruptedException{
+	public void TF001(){
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
