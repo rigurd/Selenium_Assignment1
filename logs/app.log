@@ -1,0 +1,51 @@
+14:21:53.396 DEBUG log4jWithJunitTutorial -Debug message log
+14:21:53.401 ERROR log4jWithJunitTutorial -Error message log
+14:21:53.401 FATAL log4jWithJunitTutorial -Fatal message log
+14:27:15.205 INFO  log4jWithJunitTutorial -Navigating to URL
+14:27:24.684 INFO  log4jWithJunitTutorial -clicking on Login button on the topright from center
+14:27:24.772 INFO  log4jWithJunitTutorial -Typing false user name and password
+14:27:29.994 INFO  log4jWithJunitTutorial -asserting false account input did not get accses
+14:29:42.065 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:29:51.864 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:29:51.989 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:29:57.162 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:29:57.202 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:30:11.006 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:30:16.087 INFO  testaCookiesTestFall003 -navigte to basket
+14:30:16.160 INFO  testaCookiesTestFall003 -put away value of bascet
+14:30:21.453 INFO  testaCookiesTestFall003 -Verify basket not emppty
+14:30:23.456 INFO  testaCookiesTestFall003 -open new window with javascript
+14:30:23.605 INFO  testaCookiesTestFall003 -create and arraylist of tabs
+14:30:23.622 INFO  testaCookiesTestFall003 -change focus to new window
+14:30:23.652 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
+14:33:01.731 INFO  testaCookiesTestFall003 -navigate to URL and wait for 3sek
+14:33:14.824 INFO  testaCookiesTestFall003 -click on log in button
+14:33:14.890 INFO  testaCookiesTestFall003 -Enter valid username and password
+14:33:17.407 INFO  testaCookiesTestFall003 -click log in
+14:33:19.882 INFO  testaCookiesTestFall003 -verify "Födelsedagspresent" visible 
+14:33:21.127 INFO  testaCookiesTestFall003 -assert current url2
+14:33:27.168 INFO  testaCookiesTestFall003 -log out from account
+14:34:22.312 INFO  loginSecurityTestTF019 -Navigating to URL
+14:34:27.461 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:34:35.907 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:34:54.960 INFO  loginSecurityTestTF019 -clicking on Login button on the topright from center
+14:34:55.235 INFO  loginSecurityTestTF019 -Typing false user name and password
+14:35:03.536 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:35:03.818 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:35:05.861 INFO  loginSecurityTestTF019 -asserting false account input did not get accses
+14:35:06.633 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:35:06.822 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:35:09.176 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:35:09.274 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:35:12.689 INFO  verifySpecialOffersForMembersTF013 -click log in
+14:35:15.181 INFO  verifySpecialOffersForMembersTF013 -verify "Födelsedagspresent" visible 
+14:35:20.252 INFO  verifySpecialOffersForMembersTF013 -assert current url2
+14:35:26.352 INFO  verifySpecialOffersForMembersTF013 -log out from account
+14:35:30.463 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:35:35.633 INFO  testaCookiesTestFall003 -navigte to basket
+14:35:35.773 INFO  testaCookiesTestFall003 -put away value of bascet
+14:35:41.522 INFO  testaCookiesTestFall003 -Verify basket not emppty
+14:35:43.526 INFO  testaCookiesTestFall003 -open new window with javascript
+14:35:43.718 INFO  testaCookiesTestFall003 -create and arraylist of tabs
+14:35:43.739 INFO  testaCookiesTestFall003 -change focus to new window
+14:35:43.764 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
