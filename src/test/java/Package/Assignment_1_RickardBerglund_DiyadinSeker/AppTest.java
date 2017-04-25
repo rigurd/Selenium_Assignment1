@@ -224,6 +224,14 @@ public class AppTest {
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='dd_1']/div[2]/div[1]/ul/li[1]/a")));
 		WebElement subKategori = driver.findElement(By.xpath(".//*[@id='dd_1']/div[2]/div[1]/ul/li[1]/a"));
 		subKategori.click();
+		// Waiting for an element inside subKategori then getting dropDown by xpath and clicks
+		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='content']/div[4]/div[1]/div/div/select")));
+		WebElement dropDown = driver.findElement(By.xpath(".//*[@id='content']/div[4]/div[1]/div/div/select"));
+		dropDown.click();
+		// Waiting for an element inside dropDown then getting highestPrice element and clicks
+		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='content']/div[4]/div[1]/div/div/select/option[2]")));
+		WebElement highestPrice = driver.findElement(By.xpath(".//*[@id='content']/div[4]/div[1]/div/div/select/option[6]"));
+		highestPrice.click();
 		// Getting index1 from the category list and adds it to varukorg
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='content']/div[4]/div[2]/div/ul/li[2]/div/a")));
 		WebElement index1 = driver.findElement(By.xpath(".//*[@id='content']/div[4]/div[2]/div/ul/li[2]/div/a"));
@@ -261,7 +269,7 @@ public class AppTest {
 		String privateAdress1 = privateAdress.getText();
 		String[] newPrivateAdress = privateAdress1.split(",");
 		// Asserting that correct element has been found by string
-		assertEquals("Till en privat adress (PostNord) (From 59", newPrivateAdress[0]);
+		assertEquals("Till en privat adress (PostNord) (From 0", newPrivateAdress[0]);
 		logger.info("TF006 pass");
 	}
 	@After
