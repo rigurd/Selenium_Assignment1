@@ -13,10 +13,12 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import junit.framework.Assert;
-
-
 
 public class testaCookiesTestFall003 {
 	public static WebDriver driver;
@@ -24,18 +26,21 @@ public class testaCookiesTestFall003 {
 	static public BRLeksakerr br;
 	static public JavascriptExecutor jse;
 	private static final Logger log = LogManager.getLogger(testaCookiesTestFall003.class.getName());
-	
-	
+	public static WebDriverWait wait;
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		System.setProperty("webdriver.gecko.driver", "//Users/Bismillah//Downloads//Webdrivers//Firefox//geckodriver");
-		driver = new FirefoxDriver();
+		log.info("before gecko");
+		System.setProperty("webdriver.chrome.driver", "//Users/Bismillah//Downloads//Webdrivers//Chrome//chromedriver");
+		
+		log.info("after gecko");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		br = new BRLeksakerr(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		baseURL = "http://www.br.se";
 		jse = (JavascriptExecutor) driver;
-		
+		wait = new WebDriverWait(driver, 10);
 	}
 
 	@AfterClass
@@ -59,18 +64,20 @@ public class testaCookiesTestFall003 {
 
 		log.info("Clicking on subList \"Sport&AktivLek\" in Kategori list");
 		br.sportOchAktivLek.click();
-		Thread.sleep(5000);
 
 		log.info("Scrolling 400pixels verticaly  with javascript ");
 		jse.executeScript("window.scrollBy(0,400)", "");
 
 		log.info("clicking on first produkt visible in produkt list of the page");
 		br.guldMedaljer.click();
-		Thread.sleep(10000);
 
 		log.info("Put item in basket and wait 5sek for sync");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[8]/div[2]/div/div/div[2]/div[3]/div/ul/li[1]/img")));
 		br.putInBasket.click();
-		Thread.sleep(5000);
+		
+		wait.until(ExpectedConditions.textToBe(By.xpath("/html/body/header/div/div/div[2]/div[4]/a/span/span"), "(1)"));
+		log.info("waiting");
+		
 
 		log.info("navigte to basket");
 		br.varukorg.click();
@@ -80,7 +87,6 @@ public class testaCookiesTestFall003 {
 
 		log.info("Verify basket not emppty");
 		Assert.assertEquals("Message if assert fails", "Varukorg (1 Varor)", varor);
-		Thread.sleep(2000);
 
 		log.info("open new window with javascript");
 		jse.executeScript("window.open()");

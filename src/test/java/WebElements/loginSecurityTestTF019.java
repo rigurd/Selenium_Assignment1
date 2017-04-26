@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,12 +25,12 @@ public class loginSecurityTestTF019 {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-	System.setProperty("webdriver.gecko.driver", "//Users/Bismillah//Downloads//Webdrivers//Firefox//geckodriver");
-	driver = new FirefoxDriver();
+	System.setProperty("webdriver.chrome.driver", "//Users/Bismillah//Downloads//Webdrivers//Chrome//chromedriver");
+	driver = new ChromeDriver();
 	
 	br = new BRLeksakerr(driver);
 	wait = new WebDriverWait(driver, 5);
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
 	}	
 
@@ -49,9 +50,9 @@ public class loginSecurityTestTF019 {
 		log.info("Typing false user name and password");
 		br.alreadyMemberUsername("falseUsername");
 		br.alreadyMemberPassword("falsePassword");
+		
 		br.clickLoginButton();
 		
-		Thread.sleep(3000);
 		log.info("asserting false account input did not get accses");
 		br.assertKontoNotFound();
 		

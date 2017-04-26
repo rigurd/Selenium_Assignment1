@@ -1,51 +1,200 @@
-14:21:53.396 DEBUG log4jWithJunitTutorial -Debug message log
-14:21:53.401 ERROR log4jWithJunitTutorial -Error message log
-14:21:53.401 FATAL log4jWithJunitTutorial -Fatal message log
-14:27:15.205 INFO  log4jWithJunitTutorial -Navigating to URL
-14:27:24.684 INFO  log4jWithJunitTutorial -clicking on Login button on the topright from center
-14:27:24.772 INFO  log4jWithJunitTutorial -Typing false user name and password
-14:27:29.994 INFO  log4jWithJunitTutorial -asserting false account input did not get accses
-14:29:42.065 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
-14:29:51.864 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
-14:29:51.989 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
-14:29:57.162 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
-14:29:57.202 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
-14:30:11.006 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
-14:30:16.087 INFO  testaCookiesTestFall003 -navigte to basket
-14:30:16.160 INFO  testaCookiesTestFall003 -put away value of bascet
-14:30:21.453 INFO  testaCookiesTestFall003 -Verify basket not emppty
-14:30:23.456 INFO  testaCookiesTestFall003 -open new window with javascript
-14:30:23.605 INFO  testaCookiesTestFall003 -create and arraylist of tabs
-14:30:23.622 INFO  testaCookiesTestFall003 -change focus to new window
-14:30:23.652 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
-14:33:01.731 INFO  testaCookiesTestFall003 -navigate to URL and wait for 3sek
-14:33:14.824 INFO  testaCookiesTestFall003 -click on log in button
-14:33:14.890 INFO  testaCookiesTestFall003 -Enter valid username and password
-14:33:17.407 INFO  testaCookiesTestFall003 -click log in
-14:33:19.882 INFO  testaCookiesTestFall003 -verify "Födelsedagspresent" visible 
-14:33:21.127 INFO  testaCookiesTestFall003 -assert current url2
-14:33:27.168 INFO  testaCookiesTestFall003 -log out from account
-14:34:22.312 INFO  loginSecurityTestTF019 -Navigating to URL
-14:34:27.461 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
-14:34:35.907 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
-14:34:54.960 INFO  loginSecurityTestTF019 -clicking on Login button on the topright from center
-14:34:55.235 INFO  loginSecurityTestTF019 -Typing false user name and password
-14:35:03.536 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
-14:35:03.818 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
-14:35:05.861 INFO  loginSecurityTestTF019 -asserting false account input did not get accses
-14:35:06.633 INFO  verifySpecialOffersForMembersTF013 -click on log in button
-14:35:06.822 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
-14:35:09.176 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
-14:35:09.274 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
-14:35:12.689 INFO  verifySpecialOffersForMembersTF013 -click log in
-14:35:15.181 INFO  verifySpecialOffersForMembersTF013 -verify "Födelsedagspresent" visible 
-14:35:20.252 INFO  verifySpecialOffersForMembersTF013 -assert current url2
-14:35:26.352 INFO  verifySpecialOffersForMembersTF013 -log out from account
-14:35:30.463 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
-14:35:35.633 INFO  testaCookiesTestFall003 -navigte to basket
-14:35:35.773 INFO  testaCookiesTestFall003 -put away value of bascet
-14:35:41.522 INFO  testaCookiesTestFall003 -Verify basket not emppty
-14:35:43.526 INFO  testaCookiesTestFall003 -open new window with javascript
-14:35:43.718 INFO  testaCookiesTestFall003 -create and arraylist of tabs
-14:35:43.739 INFO  testaCookiesTestFall003 -change focus to new window
-14:35:43.764 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
+10:45:02.291 ERROR verifyingSearchFunction -sdfdsfdsfdsfnasdkjnask
+10:45:02.308 INFO  verifyingSearchFunction -Navigating to URL and
+10:45:06.732 INFO  verifyingSearchFunction -typing "Lego" in search field
+10:45:06.865 INFO  verifyingSearchFunction -Clicking on ok
+10:45:06.975 INFO  verifyingSearchFunction -getting search result
+13:36:17.763 INFO  loginSecurityTestTF019 -Navigating to URL
+13:36:22.090 INFO  loginSecurityTestTF019 -clicking on Login button on the topright from center
+13:36:22.203 INFO  loginSecurityTestTF019 -Typing false user name and password
+13:36:24.203 INFO  loginSecurityTestTF019 -asserting false account input did not get accses
+13:36:38.276 INFO  loginSecurityTestTF019 -Navigating to URL
+13:36:42.145 INFO  loginSecurityTestTF019 -clicking on Login button on the topright from center
+13:36:42.279 INFO  loginSecurityTestTF019 -Typing false user name and password
+13:36:44.240 INFO  loginSecurityTestTF019 -asserting false account input did not get accses
+13:37:09.538 INFO  loginSecurityTestTF019 -Navigating to URL
+13:37:13.484 INFO  loginSecurityTestTF019 -clicking on Login button on the topright from center
+13:37:13.622 INFO  loginSecurityTestTF019 -Typing false user name and password
+13:37:16.003 INFO  loginSecurityTestTF019 -asserting false account input did not get accses
+13:40:05.491 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:40:09.421 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:40:09.643 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:40:14.785 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:40:15.301 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:40:25.487 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:40:30.565 INFO  testaCookiesTestFall003 -navigte to basket
+13:40:30.608 INFO  testaCookiesTestFall003 -put away value of bascet
+13:40:34.942 INFO  testaCookiesTestFall003 -Verify basket not emppty
+13:40:36.950 INFO  testaCookiesTestFall003 -open new window with javascript
+13:40:37.075 INFO  testaCookiesTestFall003 -create and arraylist of tabs
+13:40:37.088 INFO  testaCookiesTestFall003 -change focus to new window
+13:40:37.118 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
+13:42:36.503 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:42:40.152 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:42:40.263 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:42:40.363 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:42:40.465 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:42:45.335 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:42:48.491 INFO  testaCookiesTestFall003 -navigte to basket
+13:42:48.725 INFO  testaCookiesTestFall003 -put away value of bascet
+13:42:52.170 INFO  testaCookiesTestFall003 -Verify basket not emppty
+13:50:50.260 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:50:54.276 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:50:54.549 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:50:54.703 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:50:54.760 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:51:00.562 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:51:42.022 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:51:45.536 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:51:45.785 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:51:45.982 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:51:46.038 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:51:51.292 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:52:50.229 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:52:53.646 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:52:53.882 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:52:54.016 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:52:54.067 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:53:01.572 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:57:39.473 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:57:42.657 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:57:42.989 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:57:43.347 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:57:43.479 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:57:49.206 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:58:41.759 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:58:45.004 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:58:45.229 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+13:58:45.455 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+13:58:45.564 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+13:58:51.183 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+13:59:53.023 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+13:59:57.000 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+13:59:57.120 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:00:10.177 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:00:13.827 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:00:14.088 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:00:14.381 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:00:14.418 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:00:20.611 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:00:30.777 INFO  testaCookiesTestFall003 -waiting
+14:00:30.777 INFO  testaCookiesTestFall003 -navigte to basket
+14:00:30.889 INFO  testaCookiesTestFall003 -put away value of bascet
+14:00:34.594 INFO  testaCookiesTestFall003 -Verify basket not emppty
+14:00:34.595 INFO  testaCookiesTestFall003 -open new window with javascript
+14:00:34.800 INFO  testaCookiesTestFall003 -create and arraylist of tabs
+14:00:34.819 INFO  testaCookiesTestFall003 -change focus to new window
+14:00:34.879 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
+14:03:50.188 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:03:53.842 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:03:54.068 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:03:54.296 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:03:54.374 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:03:59.750 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:04:45.596 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:04:49.076 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:04:49.323 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:04:49.439 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:04:49.582 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:04:54.922 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:07:24.054 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:07:27.672 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:07:27.935 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:07:28.182 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:07:28.213 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:07:33.925 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:08:39.275 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:08:42.692 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:08:42.955 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:08:43.168 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:08:43.301 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:08:48.613 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:10:46.248 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:10:50.005 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:10:50.285 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:10:50.579 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:10:50.649 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:10:56.277 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:11:33.157 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:11:37.153 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:11:37.374 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:11:37.594 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:11:37.727 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:11:43.188 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:14:23.036 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:14:26.719 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:14:27.030 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:14:27.141 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:14:27.213 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:14:32.695 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:19:58.997 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:20:02.491 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:20:02.784 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:20:02.997 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:20:03.067 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:20:09.034 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:23:12.622 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:23:16.690 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:23:16.976 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:23:17.188 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:23:17.301 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:23:22.550 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:25:41.831 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:25:45.500 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:25:45.765 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:25:45.891 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:25:45.961 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:25:51.128 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:26:57.538 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:27:00.851 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:27:01.075 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:27:01.288 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:27:01.333 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:27:07.328 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:27:40.451 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:27:43.188 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:27:43.415 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:27:43.634 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:27:43.677 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:27:49.593 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:31:14.482 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:31:18.195 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:31:18.480 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:31:18.713 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:31:18.828 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:31:24.237 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:32:17.697 INFO  testaCookiesTestFall003 -Navigating to Https://www.br.se
+14:32:21.624 INFO  testaCookiesTestFall003 -clicking on "Kategori" List
+14:32:21.901 INFO  testaCookiesTestFall003 -Clicking on subList "Sport&AktivLek" in Kategori list
+14:32:22.036 INFO  testaCookiesTestFall003 -Scrolling 400pixels verticaly  with javascript 
+14:32:22.109 INFO  testaCookiesTestFall003 -clicking on first produkt visible in produkt list of the page
+14:32:27.969 INFO  testaCookiesTestFall003 -Put item in basket and wait 5sek for sync
+14:32:33.452 INFO  testaCookiesTestFall003 -waiting
+14:32:33.452 INFO  testaCookiesTestFall003 -navigte to basket
+14:32:33.485 INFO  testaCookiesTestFall003 -put away value of bascet
+14:32:37.184 INFO  testaCookiesTestFall003 -Verify basket not emppty
+14:32:37.187 INFO  testaCookiesTestFall003 -open new window with javascript
+14:32:37.397 INFO  testaCookiesTestFall003 -create and arraylist of tabs
+14:32:37.423 INFO  testaCookiesTestFall003 -change focus to new window
+14:32:37.461 INFO  testaCookiesTestFall003 -navigate to basket and verify basket not empty and assure cookies enabled and working
+14:34:00.309 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:34:04.180 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:34:04.463 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:41:14.617 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:41:18.606 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:41:18.958 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:42:33.547 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:42:50.571 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:42:54.977 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:42:55.223 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:43:45.859 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:43:50.332 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:43:50.577 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:44:35.891 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:44:40.511 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:44:40.868 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:56:16.254 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:56:19.813 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:56:20.085 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password
+14:58:11.053 INFO  verifySpecialOffersForMembersTF013 -navigate to URL and wait for 3sek
+14:58:14.653 INFO  verifySpecialOffersForMembersTF013 -click on log in button
+14:58:14.946 INFO  verifySpecialOffersForMembersTF013 -Enter valid username and password

@@ -1,0 +1,18 @@
+Apr 26, 2017 4:08:37 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF001
+INFO: Title is correct
+Apr 26, 2017 4:08:37 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF001
+INFO: TF001 Pass
+Apr 26, 2017 4:08:45 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF002
+WARNING: Kan ej gå till kassan från varukorgen utan att ha något i varukorgen
+Apr 26, 2017 4:08:45 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF002
+INFO: TF002 Pass
+Apr 26, 2017 4:09:04 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF004
+INFO: fakturaBtn works
+Apr 26, 2017 4:09:04 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF004
+INFO: TF004 Pass
+Apr 26, 2017 4:09:13 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF005
+INFO: Index0 has the highest price
+Apr 26, 2017 4:09:13 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF005
+INFO: TF005 Pass
+Apr 26, 2017 4:09:34 PM Package.Assignment_1_RickardBerglund_DiyadinSeker.AppTest TF006
+INFO: TF006 pass

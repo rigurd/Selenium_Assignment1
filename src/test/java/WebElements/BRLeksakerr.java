@@ -1,13 +1,10 @@
 package WebElements;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BRLeksakerr {
 
@@ -70,7 +67,7 @@ public class BRLeksakerr {
 		
 	}
 	
-	@FindBy(xpath="//html/body/header/div/div/div[2]/div[1]/a[1]/div")
+	@FindBy(xpath=".//*[@id='iconbar']/div[1]/a[1]")
 	WebElement loggaIn;
 	
 	public void clickLogIn(){
@@ -84,7 +81,7 @@ public class BRLeksakerr {
 		alreadyMemberPassword.sendKeys(password);
 	}
 	
-	@FindBy(xpath="//html/body/div[6]/div[2]/div[2]/div/div[2]/form/div[3]/button")
+	@FindBy(xpath=".//*[@id='loginForm']/div[3]/button")
 	WebElement loginButton;
 	
 	public void clickLoginButton(){
