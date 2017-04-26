@@ -205,7 +205,7 @@ public class AppTest {
 		}else if(a == b){
 			logger.info("Index0 and Index1 has same price");
 		}else if(b > a){
-			logger.error("This test is not working");
+			logger.info("Index1 has higher price than Index0");
 		}
 		logger.info("TF005 Pass");
 	}
