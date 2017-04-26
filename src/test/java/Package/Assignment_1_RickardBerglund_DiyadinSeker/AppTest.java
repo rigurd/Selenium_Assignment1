@@ -1,10 +1,12 @@
 package Package.Assignment_1_RickardBerglund_DiyadinSeker;
 
-import static org.junit.Assert.*;
+import java.util.logging.SimpleFormatter;
 import java.util.concurrent.TimeUnit;
-import org.apache.log4j.Logger;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -23,14 +25,23 @@ public class AppTest {
 	public static WebDriver driver;
 	public static WebDriverWait wait3s;
 	public static String baseURL = "https://www.br.se";
-	public static final Logger logger = Logger.getLogger(AppTest.class.getName());
+	public static Logger logger;
+	public static FileHandler file;
 	
 	@BeforeClass
 	public static void setup() {
 		driver = new FirefoxDriver();
 		wait3s = new WebDriverWait(driver, 3);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
+		logger = Logger.getLogger(AppTest.class.getName());
+		try{
+			file = new FileHandler("C:\\Users\\Rigurd\\workspace\\Assignment_1_RickardBerglund_DiyadinSeker\\logs\\log.log");
+		}catch(Exception e){
+			System.out.println(e.getStackTrace().toString());
+		}
+		logger.addHandler(file);
+		SimpleFormatter formatter = new SimpleFormatter();
+		file.setFormatter(formatter);
 	}
 	@Before
 	public void before(){
@@ -41,8 +52,8 @@ public class AppTest {
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(homeTitle);
-		assertEquals("Leksaker från BR | Hem", homeTitle);
+		Assert.assertNotNull(homeTitle);
+		Assert.assertEquals("Leksaker från BR | Hem", homeTitle);
 		// Finding WebElement varukorg and saves it to variable then clicks
 		WebElement varukorg = driver.findElement(By.xpath(".//*[@id='iconbar']/div[4]/a/div"));
 		varukorg.click();
@@ -51,8 +62,8 @@ public class AppTest {
 		// Saving the websites current (and new) Title to String
 		String varukorgTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(varukorgTitle);
-		assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
+		Assert.assertNotNull(varukorgTitle);
+		Assert.assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
 		try{
 			if(varukorgTitle.startsWith("Varukorg")){
 				logger.info("Title is correct");
@@ -60,7 +71,7 @@ public class AppTest {
 				logger.info("Title is wrong");
 			}
 		}catch (Exception e){
-			logger.error("Error : " + e);
+			logger.warning("Error : " + e);
 		}
 		logger.info("TF001 Pass");
 	}
@@ -69,8 +80,8 @@ public class AppTest {
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(homeTitle);
-		assertEquals("Leksaker från BR | Hem", homeTitle);
+		Assert.assertNotNull(homeTitle);
+		Assert.assertEquals("Leksaker från BR | Hem", homeTitle);
 		// Finding WebElement varukorg and saves it to variable then clicks
 		WebElement varukorg = driver.findElement(By.xpath(".//*[@id='iconbar']/div[4]/a/div"));
 		varukorg.click();
@@ -79,12 +90,12 @@ public class AppTest {
 		// Saving the websites current (and new) Title to String
 		String varukorgTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(varukorgTitle);
-		assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
+		Assert.assertNotNull(varukorgTitle);
+		Assert.assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
 		// Fungerar EJ pga man måste lägga en vara i kassan för att komma till checkout
 		WebElement gåTillKassan = driver.findElement(By.xpath(".//*[@id='basket']/div[1]/header/div/p/a"));
 		gåTillKassan.click();
-		logger.error("Kan ej gå till kassan från varukorgen utan att ha något i varukorgen");
+		logger.warning("Kan ej gå till kassan från varukorgen utan att ha något i varukorgen");
 		logger.info("TF002 Pass");
 		
 	}
@@ -93,11 +104,11 @@ public class AppTest {
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(homeTitle);
-		assertEquals("Leksaker från BR | Hem", homeTitle);
+		Assert.assertNotNull(homeTitle);
+		Assert.assertEquals("Leksaker från BR | Hem", homeTitle);
 		// Fetching webelement kategorier and asserts with another driver find element of the same location
 		WebElement kategorier = driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a"));
-		assertEquals(kategorier, driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a")));
+		Assert.assertEquals(kategorier, driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a")));
 		kategorier.click();
 		// Getting webelement subkategori by xpath and clicks
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='dd_1']/div[2]/div[1]/ul/li[1]/a")));
@@ -111,7 +122,7 @@ public class AppTest {
 		try{
 			Thread.sleep(3000);
 		}catch(InterruptedException e){
-			logger.error("Error : "+ e );
+			logger.warning("Error : "+ e );
 		}
 		// Getting varukorg element and clicks
 		WebElement varukorg = driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/div/div[3]/a/div[1]"));
@@ -120,7 +131,7 @@ public class AppTest {
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='basket']/div[1]/header/div/p/a")));
 		// Asserting that we've arrived to varukorg
 		String varukorgTitle = driver.getTitle();
-		assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
+		Assert.assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
 		// Getting webelement "gå till kassan" and clicks
 		WebElement kassan = driver.findElement(By.xpath(".//*[@id='basket']/div[1]/header/div/p/a"));
 		kassan.click();
@@ -145,15 +156,15 @@ public class AppTest {
 		// if statement testing which checkbox is selected
 		if (fakturaBtn.isSelected()){
 			logger.info("fakturaBtn works");
-			assertTrue(fakturaBtn.isSelected());
+			Assert.assertTrue(fakturaBtn.isSelected());
 		}else if(bankTransferBtn.isSelected()){
 			logger.info("bankTransferBtn works");
-			assertTrue(bankTransferBtn.isSelected());
+			Assert.assertTrue(bankTransferBtn.isSelected());
 		}else if(creditCardBtn.isSelected()){
 			logger.info("creditCardBtn works");
-			assertTrue(creditCardBtn.isSelected());
+			Assert.assertTrue(creditCardBtn.isSelected());
 		}else{
-			logger.error("Nothing works");
+			logger.warning("Nothing works");
 		}
 		logger.info("TF004 Pass");
 	}
@@ -162,11 +173,11 @@ public class AppTest {
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(homeTitle);
-		assertEquals("Leksaker från BR | Hem", homeTitle);
+		Assert.assertNotNull(homeTitle);
+		Assert.assertEquals("Leksaker från BR | Hem", homeTitle);
 		// Fetching webelement kategorier and asserts with another driver find element of the same location
 		WebElement kategorier = driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a"));
-		assertEquals(kategorier, driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a")));
+		Assert.assertEquals(kategorier, driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a")));
 		kategorier.click();
 		// Waiting for an element inside kategorier then getting subKategori element by xpath and clicks
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='dd_1']/div[2]/div[1]/ul/li[1]/a")));
@@ -184,28 +195,28 @@ public class AppTest {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			logger.error("Interrupted" + e);
+			logger.warning("Interrupted" + e);
 		}
 		// Getting top 2 indexes from ul list and parsing from string to int
 		WebElement index0price = driver.findElement(By.xpath(".//*[@id='content']/div[4]/div[2]/div/ul/li[1]/div/div/a/div[3]/div/span"));
 		String index0 = index0price.getText();
-		assertNotNull(index0);
+		Assert.assertNotNull(index0);
 		String[] newIndex0 = index0.split(",");
 		int a = Integer.parseInt(newIndex0[0]);
-		assertEquals(799, a);
+		Assert.assertEquals(799, a);
 		WebElement index1price = driver.findElement(By.xpath(".//*[@id='content']/div[4]/div[2]/div/ul/li[2]/div/div/a/div[3]/div/span"));
 		String index1 = index1price.getText();
-		assertNotNull(index1);
+		Assert.assertNotNull(index1);
 		String[] newIndex1 = index1.split(",");
 		int b = Integer.parseInt(newIndex1[0]);
-		assertEquals(599, b);
+		Assert.assertEquals(599, b);
 		// Comparing indexes
 		if (a > b){
 			logger.info("Index0 has the highest price");
 		}else if(a == b){
 			logger.info("Index0 and Index1 has same price");
 		}else if(b > a){
-			logger.error("This test is not working");
+			logger.info("Index1 has higher price than Index0");
 		}
 		logger.info("TF005 Pass");
 	}
@@ -214,11 +225,11 @@ public class AppTest {
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
-		assertNotNull(homeTitle);
-		assertEquals("Leksaker från BR | Hem", homeTitle);
+		Assert.assertNotNull(homeTitle);
+		Assert.assertEquals("Leksaker från BR | Hem", homeTitle);
 		// Getting webelement kategorier and asserts with another driver find element of the same location
 		WebElement kategorier = driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a"));
-		assertEquals(kategorier, driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a")));
+		Assert.assertEquals(kategorier, driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/ul/li[2]/a")));
 		kategorier.click();
 		// Getting subKategori by xpath and clicks
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='dd_1']/div[2]/div[1]/ul/li[1]/a")));
@@ -240,7 +251,7 @@ public class AppTest {
 		try{
 			Thread.sleep(3000);
 		}catch(InterruptedException e){
-			logger.error("Error : "+ e );
+			logger.warning("Error : "+ e );
 		}
 		// Getting varukorg icon and clicks
 		WebElement varukorg = driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/div/div[3]/a/div[1]"));
@@ -249,7 +260,7 @@ public class AppTest {
 		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='basket']/div[1]/header/div/p/a")));
 		// Asserting that we've arrived to varukorg
 		String varukorgTitle = driver.getTitle();
-		assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
+		Assert.assertEquals("Varukorg | Leksaker från BR", varukorgTitle);
 		// Getting kassan element and clicks (gå till kassan)
 		WebElement kassan = driver.findElement(By.xpath(".//*[@id='basket']/div[1]/header/div/p/a"));
 		kassan.click();
@@ -269,7 +280,7 @@ public class AppTest {
 		String privateAdress1 = privateAdress.getText();
 		String[] newPrivateAdress = privateAdress1.split(",");
 		// Asserting that correct element has been found by string
-		assertEquals("Till en privat adress (PostNord) (From 0", newPrivateAdress[0]);
+		Assert.assertEquals("Till en privat adress (PostNord) (From 0", newPrivateAdress[0]);
 		logger.info("TF006 pass");
 	}
 	@After
@@ -285,7 +296,7 @@ public class AppTest {
 			driver.close();
 			driver.quit();
 		}catch (InterruptedException e){
-			logger.error("Logger info : " + e);
+			logger.warning("Logger info : " + e);
 		}
 	}
 }
