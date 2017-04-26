@@ -25,15 +25,6 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-server</artifactId>
       <version>3.4.0</version>
-<<<<<<< HEAD
-=======
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.21</version>
-      <scope>test</scope>
->>>>>>> Diyadin
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -41,6 +32,5 @@
       <version>1.7.21</version>
       <scope>test</scope>
     </dependency>
-    
   </dependencies>
 </project>

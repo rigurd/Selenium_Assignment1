@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+=======
+	<classpathentry kind="src" path="src/main/java">
+>>>>>>> Diyadin
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
+=======
+	<classpathentry kind="src" path="src/test/java">
+>>>>>>> Diyadin
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -23,7 +31,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/Rigurd/Downloads/log4j-api-2.8.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Rigurd/Downloads/log4j-core-2.8.2.jar"/>
+=======
+	<classpathentry kind="lib" path="/Users/Bismillah/Downloads/apache-log4j-JarFiles/log4j-core-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Bismillah/Downloads/apache-log4j-JarFiles/log4j-api-2.8.2.jar"/>
+>>>>>>> Diyadin
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

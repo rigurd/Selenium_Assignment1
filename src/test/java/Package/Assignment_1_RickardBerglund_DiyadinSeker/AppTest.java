@@ -1,4 +1,4 @@
-package Package.Assignment_1_RickardBerglund_DiyadinSeker;
+	package Package.Assignment_1_RickardBerglund_DiyadinSeker;
 
 import java.util.logging.SimpleFormatter;
 import java.util.concurrent.TimeUnit;
@@ -13,13 +13,12 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Unit test for simple App.
- */
+
 public class AppTest {
 	
 	public static WebDriver driver;
@@ -30,12 +29,16 @@ public class AppTest {
 	
 	@BeforeClass
 	public static void setup() {
-		driver = new FirefoxDriver();
+
+		System.setProperty("webdriver.chrome.driver", "//Users/Bismillah//Downloads//Webdrivers//Chrome//chromedriver");
+		driver = new ChromeDriver();
+
+		
 		wait3s = new WebDriverWait(driver, 3);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		logger = Logger.getLogger(AppTest.class.getName());
 		try{
-			file = new FileHandler("C:\\Users\\Rigurd\\workspace\\Assignment_1_RickardBerglund_DiyadinSeker\\logs\\log.log");
+			file = new FileHandler("//Users//Bismillah//Documents//workspace//ProjetLeksaker//Selenium_Assignment1//logs//log.log");
 		}catch(Exception e){
 			System.out.println(e.getStackTrace().toString());
 		}
@@ -48,8 +51,8 @@ public class AppTest {
 		driver.get(baseURL);
 	}
 	@Test
-	public void TF001(){
-		// Saving the websites current Title to String
+	public void TF001(){ // Rickard Berglund
+	// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
 		Assert.assertNotNull(homeTitle);
@@ -76,7 +79,7 @@ public class AppTest {
 		logger.info("TF001 Pass");
 	}
 	@Test
-	public void TF002(){
+	public void TF002(){ // Rickard Berglund
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
@@ -100,7 +103,7 @@ public class AppTest {
 		
 	}
 	@Test
-	public void TF004(){
+	public void TF004(){ // Rickard Berglund
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
@@ -125,6 +128,7 @@ public class AppTest {
 			logger.warning("Error : "+ e );
 		}
 		// Getting varukorg element and clicks
+		wait3s.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='nav']/div[1]/div[1]/div/div[3]/a/div[1]")));
 		WebElement varukorg = driver.findElement(By.xpath(".//*[@id='nav']/div[1]/div[1]/div/div[3]/a/div[1]"));
 		varukorg.click();
 		// Waits for an element inside varukorg
@@ -169,7 +173,8 @@ public class AppTest {
 		logger.info("TF004 Pass");
 	}
 	@Test
-	public void TF005(){
+	public void TF005(){ // Rickard Berglund
+
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
@@ -221,7 +226,10 @@ public class AppTest {
 		logger.info("TF005 Pass");
 	}
 	@Test
-	public void TF006(){
+
+
+	public void TF006(){ // Rickard Berglund
+
 		// Saving the websites current Title to String
 		String homeTitle = driver.getTitle();
 		// Asserting that the saved String with title is correct with the expected result
